@@ -9,7 +9,7 @@ public class RadioTest {
 
     @Before
     public void before(){
-        radio = new Radio("MFR", "Goodmans", "Canvas DAB");
+        radio = new Radio("Goodmans", "Canvas DAB", "MFR");
     }
 
     @Test

@@ -8,7 +8,7 @@ public class RecordDeckTest {
 
     @Before
     public void before() {
-        recordDeck = new RecordDeck ("33 RPM", "12 Inch", "Sony", "PS-HX500");
+        recordDeck = new RecordDeck ("Sony", "PS-HX500", "33 RPM", "12 Inch");
     }
 
     @Test
@@ -21,7 +21,7 @@ public class RecordDeckTest {
 
     @Test
     public void canGetRecordDeckMake(){
-        assertEquals("Sony", recordDeck.getRecordDeckMake());
+        assertEquals("Sony", recordDeck.getMake());
     }
 
     @Test

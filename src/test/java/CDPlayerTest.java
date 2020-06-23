@@ -10,7 +10,7 @@ public class CDPlayerTest {
 
     @Before
     public void before(){
-        cdPlayer = new CDPlayer(5, "Bose", "Wave");
+        cdPlayer = new CDPlayer("Bose", "Wave", 5);
     }
 
     @Test
