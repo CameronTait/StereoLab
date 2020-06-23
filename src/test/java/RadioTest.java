@@ -9,7 +9,7 @@ public class RadioTest {
 
     @Before
     public void before(){
-        radio = new Radio("MFR");
+        radio = new Radio("MFR", "Goodmans", "Canvas DAB");
     }
 
     @Test
@@ -17,5 +17,13 @@ public class RadioTest {
         assertEquals("MFR", radio.tune());
     }
 
+    @Test
+    public void canGetMake() {
+        assertEquals("Goodmans", radio.getMake());
+    }
 
+    @Test
+    public void canGetModel(){
+        assertEquals("Canvas DAB", radio.getModel());
+    }
 }

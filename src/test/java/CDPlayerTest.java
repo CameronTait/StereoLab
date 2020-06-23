@@ -10,7 +10,7 @@ public class CDPlayerTest {
 
     @Before
     public void before(){
-        cdPlayer = new CDPlayer(5, "Bose");
+        cdPlayer = new CDPlayer(5, "Bose", "Wave");
     }
 
     @Test
@@ -21,6 +21,11 @@ public class CDPlayerTest {
     @Test
     public void canGetMake(){
         assertEquals("Bose", cdPlayer.getMake());
+    }
+
+    @Test
+    public void canGetModel(){
+        assertEquals("Wave", cdPlayer.getModel());
     }
 
 }

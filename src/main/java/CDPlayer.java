@@ -2,10 +2,12 @@ public class CDPlayer {
 
     private int numberOfCds;
     private String make;
+    private String model;
 
-    public CDPlayer(int numberOfCds, String make){
+    public CDPlayer(int numberOfCds, String make, String model){
         this.numberOfCds = numberOfCds;
         this.make = make;
+        this.model = model;
     }
 
     public int getNumberOfCds(){
@@ -14,6 +16,10 @@ public class CDPlayer {
 
     public String getMake(){
         return make;
+    }
+
+    public String getModel(){
+        return model;
     }
 
 }
